@@ -1,0 +1,38 @@
+body {
+    background-image: url('/static/img/signinbg.jpg');
+    background-size: cover;
+    color: aliceblue;
+    opacity: 2;
+}
+
+#form-body {
+    width: 780px;
+    background-image: url('/static/img/signinbg.jpg');
+    position: relative;
+    top: 8em;
+    padding: 32px;
+    border-radius: 50px;
+}
+
+#login_contact {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background-image: url('/static/img/signinbg.jpg');
+        background-size: cover;
+        color: aliceblue;
+        opacity: 2;
+    }
+    #form-body {
+        width: 300px;
+        background-image: url('/static/img/signinbg.jpg');
+        position: relative;
+        top: 8em;
+        padding: 32px;
+        border-radius: 50px;
+    }
+}

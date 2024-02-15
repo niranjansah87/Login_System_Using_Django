@@ -1,0 +1,28 @@
+{% extends "core/base.html" %} {% block content %} {% load static %}
+<!--bootstrap links-->
+<link href="{% static 'css/login.css' %}" rel="stylesheet" />
+
+<p class="text-center fs-3 fw-bolder bg-white mt-2 text-black">Login Author for Blogs Posting</p>
+
+<div class="container" id="form-body">
+    <img src="{% static 'img/contact.svg' %}" alt="Login" id="login_contact">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="user_id">
+            <label for="user_id" class="form-label">User Id</label>
+            <input type="text" name="username" id="user_id" class="form-control" required>
+        </div>
+        <div class="pass">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+        </div>
+        <div class="btnopt">
+            <p>If You have don't already account? <a href="{% url 'signup' %}">click here</a></p>
+        </div>
+        <div class="btn">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

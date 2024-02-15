@@ -1,0 +1,27 @@
+body {
+    /* width: 780px; */
+    background-image: url("/static/img/Signbg.jpg");
+    background-size: cover;
+}
+
+#form-body {
+    width: 780px;
+    background-image: url("/static/img/Signbg.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 30px;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:800px) {
+    #form-body {
+        width: 300px;
+        background-image: url("/static/img/Signbg.jpg");
+        background-size: cover;
+        position: relative;
+        top: 20px;
+        color: aliceblue;
+    }
+}
